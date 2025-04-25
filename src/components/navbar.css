@@ -1,0 +1,92 @@
+.nav-link {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #C29D59 !important; /* or any accent color you want */
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #C29D59;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+  color: #C29D59 !important; /* match your brand color */
+}
+
+/* Mobile nav */
+.menu-toggle {
+  z-index: 1001;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #F5EFE5;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+/* Prevent default desktop layout from applying in mobile */
+@media (min-width: 992px) {
+  .mobile-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.nav-center {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -52%) !important;
+  position: absolute !important;
+  z-index: 1 !important;
+}
+
+
+@media (max-width: 991px) {
+  .nav-center {
+    display: none !important;
+    
+  }
+}
+
+.mobile-menu {
+  background-color: #F5EFE5;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.hero-section-brands {
+  /* Use 100vw to cover the full viewport width */
+  min-height: 100vh;
+  background: url("/public/images/bgecom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100% !important;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: #f6f1ec;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-style: italic;
+  color: #ffc107;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #d58f67;
+  color: #d58f67;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #d58f67;
+  color: white;
+}

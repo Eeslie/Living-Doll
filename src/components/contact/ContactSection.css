@@ -1,0 +1,70 @@
+.contact-section {
+    background: #FDF6F0;
+    padding: 4rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3a3a3a;
+  }
+  
+  .contact-head {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #8b2e00;
+  }
+  
+  .contact-form label {
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: 1px solid #e4d4dd;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #c9a36c;
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(214, 51, 132, 0.25);
+  }
+  
+  .btn-primary-contact {
+    background-color: #c9a36c;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary-contact:hover {
+    background-color: #8b2e00;
+    transform: scale(1.05);
+  }
+  
+  hr {
+    width: 60px;
+    border-top: 3px solid #8b2e00;
+    margin: 0 auto 1rem;
+  }
+  
+  a {
+    color: #8b2e00;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-head {
+      font-size: 2rem;
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  }
+  

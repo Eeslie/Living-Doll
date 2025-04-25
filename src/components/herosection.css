@@ -1,0 +1,116 @@
+.app-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Wrapper for padding and centering */
+.hero-wrapper {
+  background-color: #fdf6f0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section container */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  gap: 40px;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+  }
+}
+
+/* Text section */
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #2f2f2f;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button */
+.explore-button {
+  background-color: #a17e56;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #8c6a48;
+}
+
+.explore-button .arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.explore-button:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* Image area */
+.hero-image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Arch background behind the image */
+.arch-bg {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: #dec8a2;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  right: 0;
+  z-index: 1;
+}
+
+/* Actual model image */
+.hero-img {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  object-fit: contain;
+}
+
+
+
+  
