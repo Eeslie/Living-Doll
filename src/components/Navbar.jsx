@@ -18,6 +18,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="mobile-menu d-lg-none d-flex flex-column align-items-start px-4 pb-2 gap-2">
             <Link className="nav-link text-dark" to="/" onClick={() => { setIsMenuOpen(false); scrollToTop();}} >Home</Link>
+            <Link className="nav-link text-dark"  to="" onClick={() => { setIsMenuOpen(false); scrollToTop();}}> Featured Products </Link>
             <Link className="nav-link text-dark" to="/productcatalog" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}> Collections </Link>
             <Link className="nav-link text-dark"  to="/brands" onClick={() => { setIsMenuOpen(false); scrollToTop();}}> Brands </Link>
             <Link className="nav-link text-dark"  to="/about" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}> About Us </Link>
@@ -31,18 +32,11 @@ const Navbar = () => {
 
           {/* Center: Menu (hidden on mobile) */}
           <div className="d-none d-lg-flex gap-4 justify-content-center nav-center position-absolute top-50 start-50 translate-middle-x">
-            <Link className="nav-link text-dark" to="/" onClick={scrollToTop}>
-              Home
-            </Link>
-            <Link className="nav-link text-dark" to="/productcatalog" onClick={scrollToTop}>
-              Collections
-            </Link>
-            <Link className="nav-link text-dark" to="/brands" onClick={scrollToTop}>
-              Brands
-            </Link>
-            <Link className="nav-link text-dark" to="/about" onClick={scrollToTop}>
-              About Us
-            </Link>
+            <Link className="nav-link text-dark" to="/" onClick={scrollToTop}> Home </Link>
+            <Link className="nav-link text-dark"  to="" onClick={() => { setIsMenuOpen(false); scrollToTop();}}> Featured Products </Link>
+            <Link className="nav-link text-dark" to="/productcatalog" onClick={scrollToTop}> Collections </Link>
+            <Link className="nav-link text-dark" to="/brands" onClick={scrollToTop}> Brands </Link>
+            <Link className="nav-link text-dark" to="/about" onClick={scrollToTop}> About Us </Link>
           </div>
 
           {/* Right: Icons + Hamburger */}

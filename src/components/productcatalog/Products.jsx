@@ -51,9 +51,6 @@ const [sidebarStatus, setSidebarStatus] = useState(false);
 
 let itemData =  productData.filter((c) => c.category === category);
 
-//tangina dresses pala hindi dress bobo ng category mo
-// OKAY NA
-
 
 const handleClick = (cat) => {
     console.log(itemData);
